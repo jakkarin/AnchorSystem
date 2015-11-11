@@ -92,11 +92,11 @@ server {
                 try_files $uri $uri/ /index.php;
         }
         location ~* \.(php|json)$ {
-        	deny all;
+		deny all;
         }
 	location ~ /(app/caches|app/session) {
-	   deny all;
-	   return 404;
+		deny all;
+		return 404;
 	}
 	....
 }
