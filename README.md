@@ -76,3 +76,24 @@ app/helpers/User.php
 if ( ! function_exists('position'))
 // จากนั้นก็แก้ไขได้ตามต้องการครับ
 ```
+
+### Nginx
+- ตั้งค่าประมาณนี้ครับ
+```
+server {
+        server_name <Your Domain>;
+        root /var/www/<Your Path>;
+        index index.html index.php;
+        location ~* \.(ico|css|js|gif|jpe?g|png)(\?[0-9]+)?$ {
+                expires max;
+                log_not_found off;
+        }
+        location / {
+                try_files $uri $uri/ /index.php;
+        }
+        location ~* \.(php|json)$ {
+        	deny all;
+        }
+	....
+}
+```
