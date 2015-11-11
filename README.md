@@ -94,6 +94,10 @@ server {
         location ~* \.(php|json)$ {
         	deny all;
         }
+	location ~ /(app/caches|app/session) {
+	   deny all;
+	   return 404;
+	}
 	....
 }
 ```
