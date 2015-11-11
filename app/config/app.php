@@ -9,7 +9,7 @@ return [
 	'template'		=> 'default',
 
 	// Session
-	'session_name'	=> 'preRegKU75',
+	'session_name'	=> 'session_name',
 	'session_path'	=> '/app/session'
 
 ];
