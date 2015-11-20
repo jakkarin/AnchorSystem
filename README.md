@@ -2,8 +2,8 @@
 
 ### ความต้องการของระบบ
 - PHP 5 (5.5 - 5.6)
-- PHP 5 PDO Support
-- PHP GD
+- PHP 5 PDO Extension
+- PHP GD Extension
 
 ### วัตถุประสงค์
 - ทำขึ้นเพื่อให้ผู้ที่สนใจอยากศึกษาการเขียนเว็บด้วย php mysql jqurey
